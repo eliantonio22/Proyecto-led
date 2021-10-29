@@ -1,0 +1,120 @@
+<!DOCTYPE  html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unetenos</title>
+    <meta name="description" content="plasticos pead y pp">
+    <meta name="keywords" content="RECICLADOS,PLASTICOS">
+    <link rel="stylesheet" type="text/css" href="css/unetenos.css"/>  
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="unetenos.js"></script>
+</head>
+
+<body>
+ 
+
+    <header class="header">
+        <div class="container logo-nav-container">
+            <nav class="navegacion">
+                <ul class="nav">
+                    <h3>Solo plasticos</h3>
+                    <a href="index.html" class="logo"> <img class="imagen" src="imagenes/logo.jpg" alt="Logo" width=80px; height= 60px;>  </a>
+                    <li><a href="index.html"> Inicio</a> </li>
+                    <li><a href="Productos.html"> Productos</a> 
+                        <ul>
+                        <li><a href="Polipropileno con carga.html" title="Polipropileno con carga">Polipropileno con carga </a></li>
+                        <li><a href="Polipropileno sin carga.html" title="Polipropileno sin carga">Polipropileno sin carga </a></li>
+                        <li><a href="Polietileno de alta densidad.html" title="Polipropileno de alta densidad">Polietileno de alta densidad</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Contacto.html" title="Contacto">Contacto</a></li>
+                    <li><a href="unetenos.html" title="Unetenos">Unetenos</a></li>
+                </ul>
+            </nav>
+        </div> 
+    </header>
+
+    <main class="main">
+        <h1> ¿Queres unirte a nosotros? Registrate. </h1>
+        
+        <h4>Si cuentas con vocacion y conciencia sobre el cuidado del medio ambiente y tenes ganas de sumarte a nuestro equipo.  <h4>
+
+           <h5> Registrate, estaremos en contacto contigo. </h5>
+        
+             <section class="contacto">
+                <h5> Unetenos </h5>
+                <form action="form" name="form" class="form" onsubmit = "return validaedad(document.getElementById('fecha').value)">
+                
+                    <label class="titulo" for="Nombre">Nombre:</label>
+                    <input class="control" type="text" name="Nombre" id="Nombre" placeholder="Juan" autofocus>
+                
+                    <label class="titulo" for="Apellido">Apellido:</label>
+                    <input class="control" type="text" name="Apellido" id="Apellido" placeholder="Perez" required>
+              
+               
+                    <label class="titulo" for="Sexo">Sexo:</label> 
+                    <label for="Femenino">Femenino</label>
+                    <input class="espacio" type="radio" name="Sexo" id="Sexo" value="Femenino">
+                    <label for="Masculino">Masculino</label>
+                    <input class="espacio" type="radio" name="Sexo" id="Sexo" value="Masculino"> 
+                    <label for="Otro">Otro</label>
+                    <input class="espacio" type="radio" name="Sexo" id="Sexo" value="Otro"> 
+                    <br>
+            
+                    <label class="titulo" for="Fecha"><b>Fecha de nacimiento:</b></label>
+                    <input  class="control" type="date" min="1930-01-01" name="fecha" id="fecha" required>
+                   <script src="unetenos.js"></script>
+
+                    <label class="titulo" for="Telefono">Telefono:</label>
+                    <input class="control" type="tel" name="Telefono" id="Telefono" placeholder="341-6369778">
+            
+                    <label class="titulo" for="Correo electronico">Correo Electronico:</label>
+                    <input class="control" type="email" name="Correo_Electronico" id="Correo_Electronico" placeholder="juanperez@gmail.com" >
+              
+                    <label class="titulo" for="dni">DNI</label>
+                    <input  class="control" type="text" id="dni" name="dni" value="" size="10" maxlength="9" pattern="[0-9]+" placeholder="37452560" required/>
+             
+                    <label class="titulo" for="Domicilio">Domicilio:</label>
+                    <input  class="control" type="text" name="Domicilio" id="Domicilio" placeholder="Siempre viva 742" required>
+              
+                    <label class="titulo" for="Foto"><b>Foto:</b></label>
+                    <input  class="control" type="file" id="Foto">
+            
+                    <label class="titulo" for="Curriculum"><b>Curriculum:</b></label>    
+                    <input  class="control" type="file" id="Curriculum">        
+               
+                
+                    <p>¡Queremos saber mas de vos! <br>
+                    Te dejamos un espacio para que nos dejes tu carta de presentación.</p> <br>
+                    <label class="titulo" for="Carta"><b>Contanos quien sos: </b> </label>  <br>
+                    <textarea class= "control" name="mensaje" id="mensaje" onpaste="contarcaracteres();" onkeyup="contarcaracteres();" cols="43" rows="10" placeholder="Escribe tu mensaje o consulta"></textarea>
+                    <div id="contador" >0 caracteres</div>
+                    
+
+                    <input onclick="validar();" class="boton" type="submit"  id="enviar" value="Enviar"> 
+                    <input class="boton" type="reset"  value="Restablecer">
+               
+                </form>
+            </section>
+        </main>
+
+<footer>
+    <div class="footer-content">
+        <h3>Solo Plasticos</h3>
+        <p>Cuidando el mundo con vos</p>
+        <ul class="sociales">
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i> </a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i> </a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square"></i> </a></li>
+        </ul>
+    </div>
+    <div class="footer-boton">
+        <p>Elizabeth Antonio </p> <p>-</p><p> Lucas Di Donato </p> <p>-</p><p> Nickolas Medina</p>
+    </div>
+</footer>
+</body>
+
+
+</html>

@@ -1,0 +1,303 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*Cabecera*/
+
+.container {
+    width: 100%;
+    margin: 10px;
+}
+
+.header{
+    background: black;
+    color: white;
+    padding: 2rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+
+}
+
+.header a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo-nav-conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    letter-spacing: 15px;
+    font-size: 1.4em;
+    }
+
+.navegacion ul{
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+    background-color: black;
+}
+
+.imagen{
+    padding: 0 40px;;
+}
+
+.navegacion ul li {   
+    margin: 0;  
+    padding: 0 20px;
+}
+
+.navegacion ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4 linear;
+    border-radius: 5px;
+}
+
+.navegacion ul li a:hover{
+    background: aqua;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+      
+.nav li ul{
+    display:none;
+    position: absolute;
+    min-width: 140px;
+}
+      
+.nav li:hover > ul{
+    display: block;
+}
+
+
+
+.caja{
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.inicio{
+    width: 102%;
+   
+}
+.texto{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: green;
+    transform: translate(-50%, -50%);
+}
+
+
+.main{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+    
+
+
+
+body {
+	background:rgba(35, 192, 4, 0.207);
+	
+}
+
+h1{
+	display:inline-block; 
+	width: 100%;
+	text-align: center;
+	font-size: 80px;
+	height: 50px;
+    margin-bottom: 100px;
+    clear: both;
+}
+
+
+
+.contenedor-tarjetas   {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;;
+      }
+    
+    .tarjeta{
+    text-align: center;
+    box-shadow: -1px 0px 5px #0000001f;
+    width: 40%;
+    padding: 40px 0;
+    background: #69f0ae ;
+    border-radius: 6px;
+    margin: 5px 10px;;
+      }
+    
+    #segunda-tarjeta{
+      margin: 0 60px;
+      font-size: 15px;
+    }
+
+    .tarjeta p {
+      font-size: 15px;
+    }
+    
+    #tarjeta{
+      margin-bottom: 100px;
+    }
+    
+    .tarjeta h2{
+      font-size: italic;
+      text-align: center;
+    }
+    
+
+.Imagen{
+    width: 70px;
+    height: 60px;
+}
+
+
+.section{
+    width: 102%;
+    height: 550px;
+    background-color: #69f0ae;
+}
+
+.contenedor{
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+aside h3{
+	margin-top: 150px;
+	width:100%;
+    text-align: center;
+	float: left;
+    font-size: 25px;
+    padding: 10px;
+	background: green;
+	margin-bottom: 1%;
+	text-decoration: none;
+
+}
+
+
+
+table{
+	border: 5px solid #000;
+	border-collapse:collapse;
+	margin-bottom: 5px;
+
+}
+table td {border:1px solid green;
+	padding: 25px;
+	width: 300px;
+    height: 200px;
+}
+table td:hover{background: black;
+	color: white;
+
+}
+table tr:hover {background: #ccc;
+
+}
+
+
+
+
+/*Footer*/
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.footer-content h3{
+    font-size: 1.8 rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.sociales{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    }
+
+.sociales li{
+    margin: 0 10px;
+}
+
+.sociales a {
+    text-decoration: none;
+    color: white;
+}
+
+.sociales a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.sociales a:hover i {
+    color: aqua
+}
+
+.footer-boton{
+    background: black;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-boton p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    display: inline;
+    
+}
+
+.footer-boton p:hover{
+    color: aqua;
+}
+
